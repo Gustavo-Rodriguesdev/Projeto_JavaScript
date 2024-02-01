@@ -173,10 +173,10 @@ switch(airPortName){
 
 
 
-for(i=1; i<=5; i++) {
+// for(i=1; i<=5; i++) {
 
-    console.log("onumero é:",i)
-}
+//     console.log("onumero é:",i)
+// }
 
 //let mynumber= 20
 
@@ -185,15 +185,115 @@ for(i=1; i<=5; i++) {
     //console.log("onumero é:",i)
 //}
 
-//while loop
+// While Loop
 
-let index= 1
+// let index= 1
 
-while(index<=100) {
+// while(index<=100) {
 
-    console.log ("o numero é: ", index)
+//     console.log ("o numero é: ",index)
+//     index++
+// }
+
+//Do while loop
+let index = 1
+
+do{
+    console.log("numero", index)
     index++
 }
+while(index<=10)
+
+//for in loop
+
+const car= {
+
+model: "BMW",
+year: "2022",
+color: "white",
+km: 28000
+
+}
+
+for(let key in car){
+
+    console.log(key,car[key])
+}
+
+//for of loop
+const friends= ["joao", "matheus", "diego", "larissa", "luana"]
+
+
+for(let friend of friends){
+
+    console.log(friend)
+}
+
+ //if(friend == "matheus") {
+
+
+   //  console.log("olá matheus")
+     
+   
+   // }
+
+   //oop - object oriented programing
+
+   
 
 
 
+   let bookTitle = "atomic habits"
+   let bookAuthor = "James Clear"
+   let bookPages = 320
+   let bookPrice =29.90
+
+   const book ={
+
+
+    Author: "James Clear",
+    Title: "atomic habits",
+    Pages: 320,
+    Price: 9.90,
+}
+//      chapters: {
+
+// chapter1: "the fundamental of atomic habits",
+// chapter2: "the suprising power of atomic habits",
+// chapter3: "..."
+
+//      },
+
+//      printBook: function(){
+
+//      Console.log("printbook....")
+
+//      }
+     
+//    }
+
+//    console.log(book)
+
+//book.printBook()
+
+//factory function
+
+function CreateBook(Title,Author,Pages,Price){
+
+   const book = {
+
+
+    Author: Author,
+    Title: Title,
+    Pages: Pages,
+    Price: Price,
+
+}
+return book
+
+}
+const book1 = new CreateBook("Atomic Habits","James Clear", 320, 29, 90)
+const book2 = new CreateBook("the power of habits","charles duhigg", 371, 25.90)
+book.color = "red"
+
+console.log (book1, book2)
